@@ -1,0 +1,22 @@
+.titleArea{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#titleText{
+    margin: 0px;
+    padding: 5px;
+    font-size: 52px;
+}
+
+.buttonLink{
+    padding: 22px;
+    margin: 5px;
+}
+
+.redirectSelectionArea{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
