@@ -5,12 +5,31 @@ var hasPlayerMoved = false;
 //Game Over Variable
 var gameOver = false;
 
-//Assign Player Names
-var p1Name;
-document.getElementById("p1Name").innerHTML = p1Name;
 
-var p2Name;
-document.getElementById("p2Name").innerHTML = p2Name;
+
+const form = document.getElementById('form');
+//Assign Player Names
+function submitNames(){
+    event.preventDefault();
+    
+    var p1Name = document.getElementById('p1Name').value;
+    if(p1Name === ""){
+        var p1Name = "Player 1"
+    }
+    console.log(p1Name);
+
+    var p2Name = document.getElementById('p2Name').value;
+    if(p2Name === ""){
+        var p2Name = "Player 2"
+    }
+    console.log(p2Name);
+//Start Game Function Would go here
+    document.getElementById("turnBox").innerHTML = `${p1Name}'s Turn`;
+}
+
+//Event Listeners
+form.addEventListener('submit', submitNames);
+
 //End Turn Button Function
 
 //Clear Turn Button Function
