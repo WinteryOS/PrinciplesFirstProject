@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/nim.css">
+</head>
+<body>
+    <div class="titleArea">
+        <h1>Nim: The Game</h1>
+    </div>
+
+    <div id='turnBox'>'s turn</div>
+    <div class="inputArea">
+
+        <form class="enterNameArea" id='form'>
+            <label class="enterNameItem" for="p1name">Player 1 Name:</label><br>
+            <input class="enterNameItem" type="text" id="p1Name" name="p1Name" placeholder="Player 1 Name"><br>
+            <label class="enterNameItem" for="p2name">Player 2 Name:</label><br>
+            <input class="enterNameItem" type="text" id="p2Name" name="p2Name" placeholder="Player 2 Name"><br><br>
+            <button type="submit" id="submit">Submit</button>
+          </form>           
+    </div>
+
+    <div class="gameAndTipsArea">
+        <div class="gameArea">
+            <div id="tablediv">
+                <!-- the buttons go here from the javascript file -->
+            </div>
+        </div>
+        <div class="tipArea">
+            <h1>Here's some tips</h1>
+        </div>
+    </div>
+</body>
+
+<script src="Player.js"></script>
+<script src="levelsdraft1.js"></script>
+
+
+</html>

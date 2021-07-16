@@ -1,0 +1,56 @@
+.titleArea{
+    text-align: center;
+}
+
+.inputArea{
+    display: flex;
+    justify-content: center;
+}
+
+.enterNameArea{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.enterNameItem{
+    margin: 5px;
+}
+
+.gameAndTipsArea{
+    display: flex;
+    justify-content: center;
+}
+
+
+.gameArea{
+    border: 3px solid black;
+    margin: 20px;
+    width: 1500px;
+    height: auto;
+}
+#gameplaytable{
+    align-items: center;
+}
+
+.stonebtn {
+    background-color: transparent;
+    background-image: url("./img/Stone2.png");
+    background-size: cover;
+    background-origin: border-box;
+    padding: 20px;
+    height: 75px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+}
+.stonebtn:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.tipArea{
+    border: 3px solid black;
+    margin: 20px;
+    width: 300px;
+}
