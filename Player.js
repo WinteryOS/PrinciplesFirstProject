@@ -4,10 +4,13 @@ var player = 1;
 var hasPlayerMoved = false;
 //Game Over Variable
 var gameOver = false;
-
-
-
+//Form Variable
 const form = document.getElementById('form');
+
+//Event Listeners
+form.addEventListener('submit', submitNames);
+
+
 //Assign Player Names
 function submitNames(){
     event.preventDefault();
@@ -26,9 +29,6 @@ function submitNames(){
 //Start Game Function Would go here
     document.getElementById("turnBox").innerHTML = `${p1Name}'s Turn`;
 }
-
-//Event Listeners
-form.addEventListener('submit', submitNames);
 
 //End Turn Button Function
 
