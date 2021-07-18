@@ -12,7 +12,7 @@
         <h1>Nim: The Game</h1>
     </div>
 
-    <div id='turnBox'>'s turn</div>
+    <div id='turnBox'>'s Turn</div>
     <div class="inputArea">
 
         <form class="enterNameArea" id='form'>
@@ -20,7 +20,17 @@
             <input class="enterNameItem" type="text" id="p1Name" name="p1Name" placeholder="Player 1 Name"><br>
             <label class="enterNameItem" for="p2name">Player 2 Name:</label><br>
             <input class="enterNameItem" type="text" id="p2Name" name="p2Name" placeholder="Player 2 Name"><br><br>
-            <button type="submit">Submit</button>
+            <div>
+                Difficulty 
+                <select id="gameDifficulty">
+                    <option value="Easy">Select Difficulty</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+
+            <button type="submit" onclick="closeForm()">Submit</button>
           </form>           
     </div>
 
