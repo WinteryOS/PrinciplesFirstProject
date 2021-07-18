@@ -24,14 +24,14 @@
 
 
 .gameArea{
-    border: 3px solid black;
+    border: 2px solid black;
     margin: 20px;
     width: 1500px;
     height: auto;
 }
 
 .tipArea{
-    border: 3px solid black;
+    border: 2px solid black;
     margin: 20px;
     width: 300px;
 }
