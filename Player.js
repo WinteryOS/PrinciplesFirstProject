@@ -6,6 +6,7 @@ var hasPlayerMoved = false;
 var gameOver = false;
 //Form Variable
 const form = document.getElementById('form');
+const endTurnForm = document.getElementById('endTurnForm');
 //Game Difficulty Variable
 var gameDifficulty;
 
@@ -32,7 +33,7 @@ function submitNames(p1Name, p2Name){
     console.log(p2Name);
 
     StartGame(p1Name,p2Name);
-
+    
    
 }
 
@@ -59,6 +60,9 @@ function StartGame(p1Name,p2Name){
         default:
           console.log("Default Error");
       }
+      
+      endTurnForm.addEventListener('submit',function (){
+        SwitchPlayer(p1Name,p2Name)});
 
 }
 //Easy Mode
@@ -75,6 +79,7 @@ function HardMode(){
 }
 
 function SwitchPlayer(p1Name,p2Name){
+    event.preventDefault();
     if(!gameOver) {
         if(player === 1){
             player = 2;
